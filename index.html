@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PostJob helps you create standout resumes and AI-generated cover letters that impress employers. Explore professional templates, personalized tools, and pricing options designed to make your job search effortless."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#161815",
+              secondary: "#6DE754",
+              accent: "#909090",
+              light: "#ffffff",
+            },
+          },
+        },
+      };
+    </script>
+    <title>PostJob | AI Cover Letter Generator & Resume Template</title>
+  </head>
+  <body>
+    <button
+      id="open-icon"
+      type="button"
+      aria-label="open-menu"
+      class="fixed top-3 right-6 z-40 border border-secondary p-3 w-10 h-10"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="size-6 text-secondary"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+        />
+      </svg>
+    </button>
+    <nav
+      class="fixed top-0 left-0 w-4/5 sm:w-2/5 lg:w-full bg-primary pt-4 md:pt-[64px] pb-[16px] px-12 lg:px-[104px] flex flex-col h-screen lg:h-[128px] lg:flex-row justify-between lg:items-center lg:justify-between"
+    >
+      <div class="flex flex-row items-center justify-between w-full">
+        <img src="./images/PostJob-logo.png" alt="post-job-logo" />
+
+        <button
+          id="close-icon"
+          type="button"
+          aria-label="close-menu"
+          class="border border-secondary p-4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 text-light lg:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul
+        id="nav-links"
+        class="text-accent w-full h-full lg:w-[458px] lg:h-[20px] flex flex-col lg:flex-row justify-evenly"
+      >
+        <li><a href="#">AI Cover Letter Generator</a></li>
+        <li><a href="#">Resume Template </a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-[16px]">
+        <button
+          type="button"
+          class="border border-secondary rounded-xl px-[32px] py-[12px] text-light font-semibold"
+        >
+          Sign In
+        </button>
+        <button
+          type="button"
+          class="border border-secondary bg-secondary rounded-xl px-[32px] py-[12px] text-primary font-semibold"
+        >
+          Get Started
+        </button>
+      </div>
+    </nav>
+
+    <!-- script file -->
+    <script src="index.js"></script>
+  </body>
+</html>
