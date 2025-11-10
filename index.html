@@ -7,25 +7,7 @@
       name="description"
       content="PostJob helps you create standout resumes and AI-generated cover letters that impress employers. Explore professional templates, personalized tools, and pricing options designed to make your job search effortless."
     />
-    <link href="./output.css" rel="stylesheet" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#161815",
-              secondary: "#6DE754",
-              accent: "#909090",
-              light: "#ffffff",
-              cards: "#1f211e",
-              overlay: "#6DE754",
-            },
-          },
-        },
-      };
-    </script>
+    <link href="./src/output.css" rel="stylesheet" />
     <title>PostJob | AI Cover Letter Generator & Resume Template</title>
   </head>
   <body class="bg-primary">
@@ -56,7 +38,7 @@
       <div
         class="flex flex-row items-center w-full lg:w-fit justify-between lg:justify-start"
       >
-        <img src="./images/PostJob-logo-small.png" alt="post-job-logo" />
+        <img src="assets/images/PostJob-logo-small.png" alt="post-job-logo" />
 
         <button
           id="close-icon"
@@ -232,7 +214,7 @@
           </p>
           <div class="relative flex flex-col items-center">
             <img
-              src="images/about-img.png"
+              src="assets/images/about-img.png"
               alt="PostJob application screenshot"
               class="w-4/5"
             />
@@ -315,7 +297,7 @@
               class="w-[320px] h-[240px] rounded-xl bg-cards p-[24px] text-accent text-base"
             >
               <img
-                src="images/git-pull-request.png"
+                src="assets/images/git-pull-request.png"
                 alt="git-pull-request icon"
                 aria-hidden="true"
               />
@@ -378,7 +360,7 @@
               class="w-[320px] h-[240px] rounded-xl bg-cards p-[24px] text-accent text-base"
             >
               <img
-                src="images/codesandbox.png"
+                src="assets/images/codesandbox.png"
                 alt="codesandbox icon"
                 aria-hidden="true"
               />
@@ -395,7 +377,7 @@
       <!-- AI & Optimize Section -->
       <section class="flex flex-col items-center bg-secondary">
         <div
-          class="w-4/5 mt-[40px] grid-cols-1 lg:grid grid-cols-2 items-center gap gap-[80px]"
+          class="w-4/5 mt-[40px] grid-cols-1 lg:grid md:grid-cols-2 items-center gap gap-[80px]"
         >
           <div>
             <h3 class="text-4xl lg:text-5xl font-semibold">
@@ -413,16 +395,16 @@
             </button>
           </div>
           <img
-            src="images/resume-generator.png"
+            src="assets/images/resume-generator.png"
             alt="resume-generator illustration"
             aria-hidden="true"
           />
         </div>
         <div
-          class="w-4/5 mt-[40px] grid-cols-1 lg:grid grid-cols-2 items-center gap-[80px]"
+          class="w-4/5 mt-[40px] grid-cols-1 lg:grid md:grid-cols-2 items-center gap-[80px]"
         >
           <img
-            src="images/keyword-optimization.png"
+            src="assets/images/keyword-optimization.png"
             alt="keyword-optimization illustration"
             aria-hidden="true"
           />
@@ -446,7 +428,7 @@
       <!-- Resume Design Section -->
       <section class="flex flex-col items-center">
         <div
-          class="w-4/5 mt-[40px] grid-cols-1 lg:grid grid-cols-2 items-center gap gap-[80px] text-light"
+          class="w-4/5 mt-[40px] grid-cols-1 lg:grid md:grid-cols-2 items-center gap gap-[80px] text-light"
         >
           <div>
             <h3 class="text-4xl lg:text-5xl font-semibold">
@@ -464,7 +446,7 @@
             </button>
           </div>
           <img
-            src="images/resume-templates.png"
+            src="assets/images/resume-templates.png"
             alt="resume-templates illustration"
             aria-hidden="true"
           />
@@ -530,6 +512,6 @@
     </footer>
 
     <!-- script file -->
-    <script src="src/index.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
