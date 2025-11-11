@@ -38,7 +38,7 @@
       <div
         class="flex flex-row items-center w-full lg:w-fit justify-between lg:justify-start"
       >
-        <img src="assets/images/PostJob-logo-small.png" alt="post-job-logo" />
+        <img src="assets/images/PostJob-logo.png" alt="post-job-logo" />
 
         <button
           id="close-icon"
@@ -213,13 +213,57 @@
             writer, and more. Powered by GPT
           </p>
           <div class="relative flex flex-col items-center">
-            <img
-              src="assets/images/about-img.png"
-              alt="PostJob application screenshot"
-              class="w-4/5"
-            />
+            <picture class="w-4/5">
+              <!-- Desktop -->
+              <source
+                srcset="assets/images/about-img-1024.webp"
+                type="image/webp"
+                media="(min-width:992px)"
+              />
+              <!-- Tablet -->
+              <source
+                srcset="assets/images/about-img-768.webp"
+                type="image/webp"
+                media="(min-width:768px)"
+              />
+              <!-- Mobile-->
+              <source
+                srcset="assets/images/about-img-640.webp"
+                type="image/webp"
+                media="(max-width:767px)"
+              />
+
+              <!-- PNG FALLBACK -->
+
+              <source
+                srcset="assets/images/about-img-1024.png"
+                type="image/png"
+                media="(min-width:992px)"
+              />
+
+              <source
+                srcset="assets/images/about-img-768.png"
+                type="image/png"
+                media="(min-width:768px)"
+              />
+
+              <source
+                srcset="assets/images/about-img-640.png"
+                type="image/png"
+                media="(max-width:767px)"
+              />
+              <!-- Default <img> tag as a fallback and for accessibility -->
+              <img
+                src="assets/images/about-img-302x124.png"
+                alt="PostJob application screenshot"
+                class="w-full h-[124px] object-cover rounded-lg m-auto"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+
             <div
-              class="absolute left-22 w-4/5 h-full z-10 rounded-lg bg-overlay/35"
+              class="w-4/5 h-full absolute left-22 z-10 rounded-lg bg-overlay/35"
             ></div>
           </div>
         </div>
@@ -394,20 +438,106 @@
               Try For free Now
             </button>
           </div>
-          <img
-            src="assets/images/resume-generator.png"
-            alt="resume-generator illustration"
-            aria-hidden="true"
-          />
+          <picture>
+            <!-- Desktop -->
+            <source
+              srcset="assets/images/resume-generator-1024.webp"
+              type="image/webp"
+              media="(min-width:992px)"
+            />
+            <!-- Tablet -->
+            <source
+              srcset="assets/images/resume-generator-768.webp"
+              type="image/webp"
+              media="(min-width:768px)"
+            />
+            <!-- Mobile-->
+            <source
+              srcset="assets/images/resume-generator-640.webp"
+              type="image/webp"
+              media="(max-width:767px)"
+            />
+
+            <!-- PNG FALLBACK -->
+            <source
+              srcset="assets/images/resume-generator-1024.png"
+              type="image/png"
+              media="(min-width:992px)"
+            />
+
+            <source
+              srcset="assets/images/resume-generator-768.png"
+              type="image/png"
+              media="(min-width:768px)"
+            />
+
+            <source
+              srcset="assets/images/resume-generator-640.png"
+              type="image/png"
+              media="(max-width:767px)"
+            />
+            <!-- Default <img> tag as a fallback and for accessibility -->
+            <img
+              src="assets/images/resume-generator.png"
+              alt="resume-generator illustration"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
+            />
+          </picture>
         </div>
         <div
           class="w-4/5 mt-[40px] grid-cols-1 lg:grid md:grid-cols-2 items-center gap-[80px]"
         >
-          <img
-            src="assets/images/keyword-optimization.png"
-            alt="keyword-optimization illustration"
-            aria-hidden="true"
-          />
+          <picture>
+            <!-- Desktop -->
+            <source
+              srcset="assets/images/keyword-optimization-1024.webp"
+              type="image/webp"
+              media="(min-width:992px)"
+            />
+            <!-- Tablet -->
+            <source
+              srcset="assets/images/keyword-optimization-768.webp"
+              type="image/webp"
+              media="(min-width:768px)"
+            />
+            <!-- Mobile-->
+            <source
+              srcset="assets/images/keyword-optimization-640.webp"
+              type="image/webp"
+              media="(max-width:767px)"
+            />
+            <!-- PNG FALLBACK -->
+
+            <source
+              srcset="assets/images/keyword-optimization-1024.png"
+              type="image/png"
+              media="(min-width:992px)"
+            />
+            <!-- Tablet -->
+            <source
+              srcset="assets/images/keyword-optimization-768.png"
+              type="image/png"
+              media="(min-width:768px)"
+            />
+            <!-- Mobile-->
+            <source
+              srcset="assets/images/keyword-optimization-640.png"
+              type="image/png"
+              media="(max-width:767px)"
+            />
+            <!-- Default <img> tag as a fallback and for accessibility -->
+            <img
+              src="assets/images/keyword-optimization.png"
+              alt="keyword-optimization illustration"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+
           <div>
             <h3 class="text-4xl lg:text-5xl font-semibold">
               Optimize the keywords in your resume
@@ -445,11 +575,53 @@
               Create an Account
             </button>
           </div>
-          <img
-            src="assets/images/resume-templates.png"
-            alt="resume-templates illustration"
-            aria-hidden="true"
-          />
+          <picture>
+            <!-- Desktop -->
+            <source
+              srcset="assets/images/resume-templates-1024.webp"
+              type="image/webp"
+              media="(min-width:992px)"
+            />
+            <!-- Tablet -->
+            <source
+              srcset="assets/images/resume-templates-768.webp"
+              type="image/webp"
+              media="(min-width:768px)"
+            />
+            <!-- Mobile-->
+            <source
+              srcset="assets/images/resume-templates-640.webp"
+              type="image/webp"
+              media="(max-width:767px)"
+            />
+            <!-- png fallback -->
+
+            <source
+              srcset="assets/images/resume-templates-1024.png"
+              type="image/png"
+              media="(min-width:992px)"
+            />
+            <!-- Tablet -->
+            <source
+              srcset="assets/images/resume-templates-768.png"
+              type="image/png"
+              media="(min-width:768px)"
+            />
+            <!-- Mobile-->
+            <source
+              srcset="assets/images/resume-templates-640.png"
+              type="image/png"
+              media="(max-width:767px)"
+            />
+            <!-- Default <img> tag as a fallback and for accessibility -->
+            <img
+              src="assets/images/resume-templates.png"
+              alt="resume-templates illustration"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
       </section>
     </main>
